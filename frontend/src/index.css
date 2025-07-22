@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Styles de la scrollbar */
+/* Fond de la scrollbar en blanc */
+:root,
+[data-theme] {
+  /* Couleur de fond et du texte */
+  background-color: white !important; /* Tout le fond en blanc */
+  color: black !important; /* Texte noir pour visibilité */
+
+  /* Scrollbar globale */
+}
+
+:root ::-webkit-scrollbar {
+  width: 16px; /* Augmenter la largeur de la scrollbar */
+}
+
+:root ::-webkit-scrollbar-track {
+  background: white; /* Fond blanc de la scrollbar */
+}
+
+:root ::-webkit-scrollbar-thumb {
+  background: gray; /* Pouce en gris */
+  border-radius: 6px; /* Arrondi du pouce */
+}
+
+:root ::-webkit-scrollbar-thumb:hover {
+  background: darkgray; /* Pouce légèrement plus foncé au survol */
+}
