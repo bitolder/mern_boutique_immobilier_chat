@@ -34,7 +34,7 @@ export default function Profile() {
       handleFileUpload(file);
     }
   }, [file]);
-  //  upload the file to the firebase storage
+  //  upload t
   const handleFileUpload = (file) => {
     const storage = getStorage(app);
     const fileName = new Date().getTime() + file.name;
