@@ -27,14 +27,13 @@ export default function Profile() {
   const fileref = useRef();
   const id = authUser._id;
   const listingsRef = useRef(null);
-  console.log(id);
 
   useEffect(() => {
     if (file) {
       handleFileUpload(file);
     }
   }, [file]);
-  //  upload t
+  //  upload
   const handleFileUpload = (file) => {
     const storage = getStorage(app);
     const fileName = new Date().getTime() + file.name;
